@@ -1,6 +1,6 @@
 import java.lang.reflect.Field;
 
-public class WashingMachine
+public class WashingMachine extends Device
     {
 
 
@@ -21,6 +21,7 @@ public class WashingMachine
 
         public WashingMachine()
         {
+            this.PowerOn();
             homeappliancesstore.deviceCounter ++;
         }
 

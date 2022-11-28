@@ -1,6 +1,6 @@
 import java.lang.reflect.Field;
 
-public class AirCondition
+public class AirCondition extends Device
     {
 
 
@@ -26,6 +26,7 @@ public class AirCondition
 
         public AirCondition(String companyName)
         {
+            this.PowerOff();
             homeappliancesstore.deviceCounter ++;
         }
 

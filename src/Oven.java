@@ -1,7 +1,8 @@
 import java.lang.reflect.Field;
 
-public class Oven
-    {
+public class Oven extends Device
+
+{
 
 
         private float length = 50;
@@ -21,6 +22,7 @@ public class Oven
 
         public Oven()
         {
+            this.PowerOn();
             homeappliancesstore.deviceCounter ++;
         }
 

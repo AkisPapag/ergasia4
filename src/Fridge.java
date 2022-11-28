@@ -1,15 +1,6 @@
 import java.lang.reflect.Field;
 
-public class Fridge {
-
-    private float length = 186;
-    private float height = 60;
-    private float depth = 66;
-    private String companyName = "Bosch";
-    private String deviceName = "KGN36ELEA";
-    private String deviceType = "untitled.src.Fridge";
-    private float energyConsumption = 100;
-
+public class Fridge extends Device {
 
     private int shelveAmount = 3;
     private boolean waterSupply = false;
@@ -19,17 +10,8 @@ public class Fridge {
 
     public Fridge()
     {
-        homeappliancesstore.deviceCounter ++;
-    }
-
-    public Fridge(String companyName)
-    {
-        homeappliancesstore.deviceCounter ++;
-    }
-
-    void periodicMaintenance()
-    {
-
+        this.PowerOn();
+        homeappliancesstore.deviceCounter++;
     }
 
     void PrintDetails()
